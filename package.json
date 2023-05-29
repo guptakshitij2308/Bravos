@@ -4,7 +4,8 @@
   "description": "Landing page for bravos, a restraunt reviewing website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "author": "Kshitij Gupta",
   "license": "ISC",
