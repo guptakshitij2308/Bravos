@@ -424,6 +424,43 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #845ef7; }
+  .form__input:focus:focus:invalid {
+    border-bottom: 3px solid #e64980; }
+  .form__input:focus::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .section-about {
   background-color: #efefef;
   padding: 25rem 0;
@@ -453,7 +490,7 @@ body {
   background-image: linear-gradient(to right bottom, #9775fa, #7950f2); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/hotel-5.jpg);
+  background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.85) 0%, rgba(239, 239, 239, 0.85) 50%, transparent 50%), url(../../img/hotel-5.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.5rem;
