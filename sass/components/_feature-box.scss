@@ -7,8 +7,12 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: all 0.3s;
 
+  @include respond(tab-land) {
+    font-size: 1.3rem !important;
+    padding: 1rem !important;
+  }
   @include respond(tab-port) {
-    padding: 2rem;
+    padding: 1.5rem !important;
   }
 
   &__icon {
@@ -22,8 +26,11 @@
     );
     -webkit-background-clip: text;
     color: transparent;
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       font-size: 5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
       margin-bottom: 0;
     }
   }

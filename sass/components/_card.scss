@@ -165,8 +165,22 @@
     font-weight: 300;
   }
 
+  @include respond(tab-land) {
+    &__details {
+      padding: 2.5rem;
+
+      width: 100%;
+      li {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
   @include respond(tab-port) {
     height: auto;
+
     border-radius: 0.4rem;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);

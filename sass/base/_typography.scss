@@ -19,9 +19,13 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
+    @include respond(tab-port) {
+      letter-spacing: 2.5rem;
+      font-size: 5rem;
+    }
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
   }
   &--sec {

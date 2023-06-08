@@ -74,10 +74,14 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.2s;
     animation-timing-function: ease-out; }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        letter-spacing: 2.5rem;
+        font-size: 5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 5rem; } }
+        font-size: 4.5rem; } }
   .heading-primary--sec {
     display: block;
     font-size: 2rem;
@@ -271,9 +275,13 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.3s; }
+  @media (max-width: 75em) {
+    .feature-box {
+      font-size: 1.3rem !important;
+      padding: 1rem !important; } }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 1.5rem !important; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -281,9 +289,12 @@ body {
     background-image: linear-gradient(to right, #9775fa, #7950f2);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 75em) {
+      .feature-box__icon {
+        font-size: 5rem; } }
     @media (max-width: 56.25em) {
       .feature-box__icon {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-bottom: 0; } }
   .feature-box:hover {
     transform: scale(1.05) translateY(-1.5rem);
@@ -378,6 +389,14 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 300; }
+  @media (max-width: 75em) {
+    .card__details {
+      padding: 2.5rem;
+      width: 100%; }
+      .card__details li {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem; } }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -600,7 +619,10 @@ body {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 8rem; } }
+        margin-bottom: 6rem; } }
+  @media (max-width: 75em) {
+    .row {
+      padding: 3rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -616,7 +638,10 @@ body {
       @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 8rem; } }
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -938,6 +963,11 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 75em) {
+    .section-features {
+      transform: skewY(0); }
+      .section-features > * {
+        transform: skewY(0); } }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
