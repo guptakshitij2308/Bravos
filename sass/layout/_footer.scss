@@ -11,6 +11,9 @@
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -32,6 +35,11 @@
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -42,11 +50,6 @@
     display: inline-block;
     &:not(:last-child) {
       margin-right: 1.6rem;
-    }
-
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
     }
   }
 
